@@ -1,0 +1,10 @@
+# IDE
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# OS
+.DS_Store
+
+# Vendor
+node_modules

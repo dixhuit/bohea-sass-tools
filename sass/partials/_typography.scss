@@ -1,0 +1,82 @@
+// Modular scale powered rem mixins & functions
+// -----------------------------------------------------------------------------
+
+// Mixin arguments need to be compatible Modular Scale arguments
+// https://github.com/modularscale/modularscale-sass#usage
+
+@function rem-scale($point-on-scale) {
+  @return rem(modular-scale($point-on-scale))
+}
+
+@mixin heading-margins($margin-top, $margin-bottom) {
+  margin-top: rem-scale($margin-top);
+  margin-bottom: rem-scale($margin-bottom);
+}
+
+
+// Link colours
+// -----------------------------------------------------------------------------
+
+@mixin link-colors($base, $hover:null, $active:null) {
+
+  color: $base;
+
+  // :active, :visited
+  @if ($active) {
+    &:active,
+    &:visited {
+      color: $active;
+    }
+  } @else {
+    &:active,
+    &:visited {
+      color: $base;
+    }
+  }
+
+  // :hover, :focus
+  @if ($hover) {
+    &:hover,
+    &:focus {
+      color: $hover;
+    }
+  } @else {
+    &:hover,
+    &:focus {
+      color: $base;
+    }
+  }
+}
+
+
+// Font smoothing
+// -----------------------------------------------------------------------------
+
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+// Anti-FOUT measures (WebFontLoader)
+// -----------------------------------------------------------------------------
+
+// Based on:
+// https://gist.github.com/jackw/6702593
+// http://help.typekit.com/customer/portal/articles/6852-controlling-the-flash-of-unstyled-text-or-fout-using-font-events
+
+@mixin webfont($font-stack) {
+  font-family: $font-stack;
+  .wf-loading & {
+    visibility: hidden;
+  }
+  .wf-active {
+    visibility: visible;
+  }
+}

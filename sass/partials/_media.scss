@@ -1,0 +1,13 @@
+// Stops whitespace from appearing under images
+@mixin img-block {
+  img {
+    display: block;
+  }
+}
+
+// Allow images to resize above their natural max-width
+@mixin img-force-full-width {
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+%hlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include clearfix;
+
+  > li {
+    list-style: none;
+
+    &,
+    > a {
+      float: left;
+    }
+  }
+}
+
+%hlist-centered {
+  @include clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  > li {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "bohea-sass-tools",
+  "description": "A Sass mixin & function library.",
+  "main": "sass/_bohea-sass-tools.scss",
+  "license": "MIT",
+  "ignore": [
+    ".gitignore",
+    "package.json"
+  ],
+  "keywords": [
+    "css",
+    "mixins",
+    "sass",
+    "scss"
+  ],
+  "authors": [
+    "Dan Bohea (http://bohea.uk)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danbohea/bohea-sass-tools.git"
+  },
+  "dependencies": {
+    "bourbon": "~4.2.1"
+  }
+}
