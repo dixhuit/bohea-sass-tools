@@ -1,6 +1,6 @@
 # Bohea Sass Tools
 
-A lightweight, opinionated collection of Sass functions & mixins.
+A lightweight, opinionated collection of Sass functions, mixins & placeholder selectors.
 
 ## Install
 
