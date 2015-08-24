@@ -23,8 +23,7 @@
 @mixin element-hidden {
   display: none;
 }
-%element-hidden,
-.screen-reader-only {
+%element-hidden {
   @include element-hidden;
 }
 
@@ -41,7 +40,8 @@
   overflow: hidden;
   height: 1px;
 }
-%element-invisible {
+%element-invisible,
+.screen-reader-only {
   @include element-invisible;
 }
 
