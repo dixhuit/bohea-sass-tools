@@ -1,16 +1,12 @@
-// Modular scale powered rem mixins & functions
+// Modular scale powered mixins
 // -----------------------------------------------------------------------------
 
 // Mixin arguments need to be compatible Modular Scale arguments
 // https://github.com/modularscale/modularscale-sass#usage
 
-@function rem-scale($point-on-scale) {
-  @return rem(modular-scale($point-on-scale))
-}
-
 @mixin heading-margins($margin-top, $margin-bottom) {
-  margin-top: rem-scale($margin-top);
-  margin-bottom: rem-scale($margin-bottom);
+  margin-top: modular-scale($margin-top);
+  margin-bottom: modular-scale($margin-bottom);
 }
 
 
