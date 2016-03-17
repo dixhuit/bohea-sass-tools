@@ -1,0 +1,6 @@
+// Source: https://goo.gl/7JooX0
+@mixin only-firefox {
+  @-moz-document url-prefix() {
+    @content; // << Firefox-only code passed in here.
+  }
+}
