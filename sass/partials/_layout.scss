@@ -7,7 +7,7 @@
 // Lists
 // -----------------------------------------------------------------------------
 
-%hlist {
+@mixin hlist {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@
   }
 }
 
-%hlist-centered {
+@mixin hlist-centered {
   @include clearfix;
   list-style: none;
   margin: 0;

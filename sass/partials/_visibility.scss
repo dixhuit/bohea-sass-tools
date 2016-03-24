@@ -2,16 +2,10 @@
 @mixin text-invisible {
   text-indent: -999em;
 }
-%text-invisible {
-  @include text-invisible;
-}
 
 // Revert hidden text
 @mixin text-visible {
   text-indent: 0;
-}
-%text-visible {
-  @include text-visible;
 }
 
 // Hide elements visually, but keep them available for screen-readers
@@ -27,7 +21,6 @@
   overflow: hidden;
   height: 1px;
 }
-%element-invisible,
 .screen-reader-only {
   @include element-invisible;
 }
@@ -39,9 +32,6 @@
   overflow: inherit;
   height: inherit;
 }
-%element-visible {
-  @include element-visible;
-}
 
 // Ensure 'invisible' elements are still focusable
 @mixin element-focusable {
@@ -52,7 +42,4 @@
     overflow: visible;
     height: auto;
   }
-}
-%element-focusable {
-  @include element-focusable;
 }
