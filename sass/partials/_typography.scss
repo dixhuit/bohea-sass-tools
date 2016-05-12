@@ -67,9 +67,8 @@
 // Anti-FOUT measures (WebFontLoader)
 // -----------------------------------------------------------------------------
 
-// Based on:
-// https://gist.github.com/jackw/6702593
-// http://help.typekit.com/customer/portal/articles/6852-controlling-the-flash-of-unstyled-text-or-fout-using-font-events
+// Based on: https://gist.github.com/jackw/6702593
+// More info: https://helpx.adobe.com/typekit/using/font-events.html
 
 @mixin webfont($font-stack) {
   font-family: $font-stack;

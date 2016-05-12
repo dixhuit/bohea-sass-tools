@@ -1,0 +1,5 @@
+@mixin debug-bg($color:yellow) {
+  @if ($debug-bg) {
+    background-color: $color;
+  }
+}

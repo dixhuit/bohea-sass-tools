@@ -4,3 +4,10 @@
     @content; // << Firefox-only code passed in here.
   }
 }
+
+// Source: https://goo.gl/V7Dc5z
+@mixin only-ie10-plus {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content; // << IE10+-only code passed in here.
+  }
+}
