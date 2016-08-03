@@ -21,9 +21,6 @@
   overflow: hidden;
   height: 1px;
 }
-.screen-reader-only {
-  @include element-invisible;
-}
 
 // Reverts 'element-invisible'
 @mixin element-visible {
