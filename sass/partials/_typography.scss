@@ -8,24 +8,17 @@
   @return rem(ceil(modular-scale($point-on-scale)));
 }
 
-@mixin heading-margins($margin-top, $margin-bottom, $margins:true) {
+@mixin heading-margins($margin-top, $margin-bottom) {
   // $margin-top & $margin-bottom:
   // Accepts a modular scale value or null (null sets margin to 0px).
-  // $margins (optional):
-  // Set to false to set both margins to 0px.
-  @if ($margins) {
-    @if ($margin-top != null) {
-      margin-top: rem-scale($margin-top);
-    } @else {
-      margin-top: 0;
-    }
-    @if ($margin-bottom != null) {
-      margin-bottom: rem-scale($margin-bottom);
-    } @else {
-      margin-bottom: 0;
-    }
+  @if ($margin-top != null) {
+    margin-top: rem-scale($margin-top);
   } @else {
     margin-top: 0;
+  }
+  @if ($margin-bottom != null) {
+    margin-bottom: rem-scale($margin-bottom);
+  } @else {
     margin-bottom: 0;
   }
 }
