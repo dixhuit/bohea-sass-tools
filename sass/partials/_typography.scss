@@ -58,6 +58,11 @@
   }
 }
 
+// Alias for convenience
+@mixin link-colours($base, $hover:null, $active:null) {
+  @include link-colors($base, $hover, $active);
+}
+
 
 // Font smoothing
 // -----------------------------------------------------------------------------
