@@ -13,7 +13,7 @@
 }
 
 // Flip an image horizontally or vertically
-@mixin flip-img($axis:'x') {
+@mixin img-flip($axis:'x') {
   @if $axis == 'x' {
     transform: scaleX(-1);
     filter: FlipH;
