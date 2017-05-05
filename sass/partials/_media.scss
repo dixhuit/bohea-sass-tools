@@ -11,3 +11,14 @@
     width: 100%;
   }
 }
+
+// Flip an image horizontally or vertically
+@mixin flip-img($axis:'x') {
+  @if $axis == 'x' {
+    transform: scaleX(-1);
+    filter: FlipH;
+  } @elseif $axis == 'y' {
+    transform: scaleY(-1);
+    filter: FlipY;
+  }
+}
