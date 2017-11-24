@@ -1,11 +1,9 @@
 # Bohea Sass Tools
 
-A lightweight, opinionated collection of Sass utilities.
+An opinionated & personal Sass mixin & function library.
 
 ## Install
 
-* [Bower](http://bower.io/): `bower install --save-dev bohea-sass-tools`
-
-## Dependencies
-
-* Bourbon (for modular scale)
+```
+npm install --save-dev bohea-sass-tools
+```

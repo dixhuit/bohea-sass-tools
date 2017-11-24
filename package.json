@@ -1,0 +1,22 @@
+{
+  "name": "bohea-sass-tools",
+  "description": "An opinionated & personal Sass mixin & function library.",
+  "main": "sass/_bohea-sass-tools.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbohea/bohea-sass-tools.git"
+  },
+  "keywords": [
+    "sass",
+    "scss"
+  ],
+  "author": "Dan Bohea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danbohea/bohea-sass-tools/issues"
+  },
+  "homepage": "https://github.com/danbohea/bohea-sass-tools#readme",
+  "dependencies": {
+    "bourbon": "^4.3.4"
+  }
+}
