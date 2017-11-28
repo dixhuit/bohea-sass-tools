@@ -5,7 +5,11 @@
 // https://github.com/modularscale/modularscale-sass#usage
 
 @function rem-scale($point-on-scale) {
-  @return rem(ceil(modular-scale($point-on-scale)));
+  // Partly based on original Bourbon `rem` function
+  // (converted px to rem - now deprecated).
+  $base: $em-base; // $em-base is a default provided by Bourbon.
+  $pxval: ceil(modular-scale($point-on-scale));
+  @return ($pxval / $base) * 1rem;
 }
 
 @mixin heading-margins($margin-top, $margin-bottom) {
