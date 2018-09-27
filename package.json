@@ -1,6 +1,6 @@
 {
   "name": "bohea-sass-tools",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An opinionated & personal Sass mixin & function library.",
   "main": "sass/_bohea-sass-tools.scss",
   "repository": {
